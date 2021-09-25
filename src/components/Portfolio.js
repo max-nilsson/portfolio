@@ -39,7 +39,8 @@ const Portfolio = () => {
                 <Col xs={12} sm={6}>
                     <p>Hej, mitt namn är</p>
                     <h1>Max</h1>
-                    <p>Jag är en utvecklare med fler sidor än bara kod</p>
+                    <p>Jag är en utvecklare med fler sidor än bara kod.</p>
+                    <p>Jag kan steka hamburhare också.</p>
                 </Col>
             </Row>
             <Row>
