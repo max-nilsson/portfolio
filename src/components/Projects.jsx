@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
+import React from 'react'
+import { Card, CardGroup } from 'react-bootstrap'
 
 const projects = [{
     id: '1',
@@ -17,34 +16,9 @@ const projects = [{
 
 ]
 
-const profileURL = "https://api.github.com/users/octocat/repos";
-
-const Portfolio = () => {
-
-    const [repos, setRepos] = useState([])
-    
-    useEffect(() => {
-        axios.get(profileURL).then((response) => {
-          setRepos(response.data);
-        });
-      }, []);
-    
-      if (!repos) return null;
-
-      console.log(repos);
-
+const Projects = () => {
     return (
-        <Container>
-            <Row>
-                <Col xs={12} sm={6}>
-                    <p>Hej, mitt namn är</p>
-                    <h1>Max</h1>
-                    <p>Jag är en utvecklare med fler sidor än bara kod.</p>
-                    <p>Jag kan steka hamburhare också.</p>
-                </Col>
-            </Row>
-            <Row>
-                <h4>Projekt</h4>
+        <>
                 <CardGroup>
                 {projects.map((project) => (
                     <Card key={project} className="projectCard">
@@ -59,9 +33,8 @@ const Portfolio = () => {
                     </Card>
                 ))}
                 </CardGroup>
-            </Row>
-        </Container>
+                </>
     )
 }
 
-export default Portfolio
+export default Projects

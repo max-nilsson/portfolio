@@ -1,7 +1,25 @@
+.App {
+  background-color: #121212;
+}
+
 .Navbar {
-  background-color: lightblue;
+  background-color: #272727;
 }
 
 .projectCard {
+  background-color: #272727!important;
+  color: white;
   min-height: 30vh;
+}
+
+.sectionTitle {
+  color: #363636;
+}
+
+.firstSection {
+  min-height: 70vh;
+}
+
+.techLogo img {
+  max-width: 5vw;
 }

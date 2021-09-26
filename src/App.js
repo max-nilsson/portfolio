@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Portfolio from './components/Portfolio';
+import Portfolio from './pages/Portfolio';
 import Header from './components/Header';
 
 function App() {
